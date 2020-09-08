@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+#ball{
+	width:100px;
+	position:absolute;
+	left:0px;
+	top:10px;
+	animation-name:aniB;
+	animation-duration:1s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	
+
+}
+@keyframes aniB{
+	from{
+		left:0px;
+		top:10px;
+	}
+	to{
+		left:20px;
+		top:100px;
+	}
+}
+#box{
+	width:50px;
+	height:50px;
+	background:#ebebeb;
+	border:1px solid #ebebeb;
+	border-radius:50px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	animation-name:aniG;
+	animation-duration:1s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+}
+@keyframes aniG{
+	from{
+		left:20px;
+		top:300px;
+		width:50px;
+		height:50px;
+		background:#ebebeb;
+	}
+	to{
+		left:40px;
+		top:200px;
+		width:50px;
+		height:40px;
+		background:#c1c1c1;
+	}
+}
+</style>
+</head>
+<body>
+	<img id="ball" src="../images/ball.png">
+	<div id="box"></div>
+</body>
+</html>

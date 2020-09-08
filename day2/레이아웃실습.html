@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>레이아웃실습</title>
+<style>
+#wrapper{
+	width:700px;
+	height:600px;
+	border:2px solid black;
+}
+#box1{
+	background:red;
+	width:100%;
+	height:100px;
+}
+/*자식요소를 float한 경우 부모인 div에는 overflow:hidden속성을 지정해야 문제발생X*/
+#box2{
+	background:gray;
+	width:100%;
+	height:400px;
+	overflow:hidden;
+}
+#box3{
+	background:yellow;
+	width:200px;
+	height:100%;
+	float:left;
+}
+#box4{
+	background:blue;
+	width:500px;
+	height:100%;
+	float:left;
+}
+#box5{
+	background:green;
+	height:100px;
+	width:100%;
+}
+</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="box1">1</div>
+		<div id="box2">
+			<div id="box3">3</div>
+			<div id="box4">4</div>
+		</div>
+		<div id="box5">5</div>
+	</div>
+</body>
+</html>

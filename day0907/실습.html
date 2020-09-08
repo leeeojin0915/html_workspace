@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background:url(https://pbs.twimg.com/tweet_video_thumb/EFNk1KxUEAASlJg.jpg);
+            background-size:200px 200px;
+            margin:auto;
+            border:5px dotted yellowgreen;
+        }
+    
+        #mask{
+            width:200px;
+            height: 200px;
+            background:black;
+        }
+         @keyframes fading{
+            from{
+                opacity: 0.4;
+            }
+            to{
+                opacity: 0;
+            }
+        } 
+        #box:hover #mask{
+            opacity: 0.4;
+            transform: scaleX(-1);
+            animation: fading 1s linear forwards;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="mask"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지flip</title>
+    <style>
+        /* 최초는 500으로 고정시켜놔야함 */
+        img{
+            width:500px;
+        }
+        /*유사클래스 이용*/
+        img:hover{
+            width:500px;/*html은 width값만 부여할 경우, 높이는 비율에 맞게 자동 조정*/
+            transform:scaleX(-1);/*x축의 방향으로 뒤집기*/
+        }
+    </style>
+</head>
+<body>
+    <img src="https://earthsky.org/upl/2018/10/moon-waxing-crescent-earthshine-1-8-2019-Chuck-Reinhart-Vincennes-IN-e1547258318928.jpg">
+</body>
+</html>
